@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         val name = intent.getStringExtra("username").toString()
-        val URL = "file:///android_asset/index.html?username=${name}"
+        val URL = "https://fascinating-hotteok-73b942.netlify.app?username=${name}"
 
         binding.wvMain.apply {
             webChromeClient = WebChromeClient()
