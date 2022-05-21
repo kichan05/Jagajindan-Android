@@ -40,6 +40,7 @@ class RegisterActivity : AppCompatActivity() {
             putExtra("username", name)
         }
         startActivity(intent)
+        overridePendingTransition(R.anim.anim_side_right, R.anim.anim_fade_out);
 
         if(!isSave)
             lifecycleScope.launch {
